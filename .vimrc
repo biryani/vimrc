@@ -38,3 +38,10 @@ let g:slime_target = "tmux"
 ""Turn off the trailing whitespace stuff in airline
 let g:airline#extensions#whitespace#enabled = 0
 set relativenumber
+
+""Window navigation
+
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
