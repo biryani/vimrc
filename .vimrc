@@ -53,8 +53,8 @@ let g:airline#extensions#whitespace#enabled = 0
 set relativenumber
 
 ""Window navigation
-
-nnoremap <C-H> <C-W>h
-nnoremap <C-J> <C-W>j
-nnoremap <C-K> <C-W>k
-nnoremap <C-L> <C-W>l
+""Superseded by vim-tmux-navigator
+""nnoremap <C-H> <C-W>h
+""nnoremap <C-J> <C-W>j
+""nnoremap <C-K> <C-W>k
+""nnoremap <C-L> <C-W>l
