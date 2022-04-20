@@ -25,6 +25,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 let g:airline_theme='solarized_flood'
