@@ -17,6 +17,7 @@ set laststatus=2
 call plug#begin()
 set tabstop=4 shiftwidth=4 expandtab
 ""Plug 'sheerun/vim-polyglot'
+Plug 'arcticicestudio/nord-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-airline/vim-airline'
@@ -28,7 +29,9 @@ Plug 'ervandew/supertab'
 Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
-let g:airline_theme='solarized_flood'
+colorscheme nord
+
+let g:airline_theme='nord'
 
 "" For the solarized theme
 syntax enable
@@ -36,14 +39,21 @@ syntax enable
 filetype plugin on
 set path+=**
 set wildmenu
-
 set term=xterm-256color
 set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+""The below  option is need for nord-vim sometimes
+if exists('+termguicolors')
+        set termguicolors
+    endif
+
+"let g:solarized_termcolors=256
+"let g:solarized_contrast='high'
+"colorscheme solarized
+
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'nord',
       \ }
+
 ""Setting up vim-slime
 let g:slime_target = "tmux"
 
@@ -57,4 +67,4 @@ set relativenumber
 ""nnoremap <C-H> <C-W>h
 ""nnoremap <C-J> <C-W>j
 ""nnoremap <C-K> <C-W>k
-""nnoremap <C-L> <C-W>l
+"nnoremap <C-L> <C-W>l
