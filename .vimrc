@@ -27,11 +27,12 @@ Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-colorscheme nord
+colorscheme gruvbox
 
-let g:airline_theme='nord'
+let g:airline_theme='gruvbox'
 
 "" For the solarized theme
 syntax enable
@@ -51,7 +52,7 @@ if exists('+termguicolors')
 "colorscheme solarized
 
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'gruvbox',
       \ }
 
 ""Setting up vim-slime
