@@ -1,3 +1,4 @@
+
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -27,9 +28,16 @@ Plug 'tpope/vim-fugitive'
 Plug 'ervandew/supertab'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 call plug#end()
 
+"let g:solarized_termcolors=256
+"let g:solarized_contrast='high'
 colorscheme gruvbox
+
+
+"colorscheme nord
 
 let g:airline_theme='gruvbox'
 
@@ -45,11 +53,6 @@ set background=dark
 if exists('+termguicolors')
         set termguicolors
     endif
-
-"let g:solarized_termcolors=256
-"let g:solarized_contrast='high'
-"colorscheme solarized
-
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',
       \ }
